@@ -6,7 +6,7 @@
 
 ## What is "AppScho" ?
 
-TODO
+[&nearr;&nbsp;AppScho](https://www.appscho.com/) is an all-in-one mobile app which centralizes everything students need - class schedules, grades, campus news, internship offers - into one intuitive platform. Built for universities and higher education institutions, AppScho strengthens engagement and simplifies communication, making campus life more connected and efficient.
 
 ## Installation
 
@@ -33,7 +33,19 @@ bun add appscho
 ```typescript
 import * as AppScho from "appscho";
 
-// TODO
+// The instance you want to use.
+// You can get a list of them by using AppScho.INSTANCES (Array<Instance>) constant.
+const instance = "univpoitiers";
+
+const user = await AppScho.login(instance, "username", "password");
+console.log(user);
+
+// Retrieve the list of all Crous available for this instance.
+const crous = await AppScho.getCrous(instance, user.token);
+
+// Let's retrieve restaurants from the first Crous.
+const restaurants = await AppScho.getCrousRestaurants(instance, user.token, crous[0].id);
+console.log(restaurants);
 ```
 
 You can find guides at [**&nearr;&nbsp;appscho.docs.literate.ink**](https://appscho.docs.literate.ink) and if it's not enough you can also take a look at the [**&nearr;&nbsp;examples** directory on the GitHub repository](https://github.com/LiterateInk/AppScho.JS/tree/main/examples) for inspiration.
