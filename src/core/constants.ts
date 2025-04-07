@@ -48,11 +48,11 @@ export const INSTANCES: Array<Instance> = [
   { id: "unimes", name: "Université de Nîmes" }
 ];
 
-export const createAppSchoAPI = (service: string): string =>
-  `https://api.appscho.com/${service}`;
+export const createAppSchoAPI = (instance: string): string =>
+  `https://api.appscho.com/${instance}`;
 
-export const createMyAppSchoAPI = (service: string): string =>
-  `https://my.appscho.com/api/${service}`;
+export const createMyAppSchoAPI = (instance: string): string =>
+  `https://my.appscho.com/api/${instance}`;
 
-export const createFeedAPI = (service: string): string =>
-  `https://feed.appscho.com/api/m/v1/${service}`;
+export const createFeedAPI = (instance: string): string =>
+  `https://feed.appscho.com/api/m/v1/${instance}`;
