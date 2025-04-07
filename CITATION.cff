@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: AppScho
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: LiterateInk
+    website: "https://literate.ink"
+    email: contact@literate.ink
+repository-code: "https://github.com/LiterateInk/AppScho.JS"
+url: "https://appscho.docs.literate.ink/"
+repository-artifact: "https://www.npmjs.com/package/appscho"
+abstract: >-
+  An awmazing API wrapper for AppScho.
+keywords:
+  - appscho
+  - wrapper
+  - api
+license: GPL-3.0-or-later

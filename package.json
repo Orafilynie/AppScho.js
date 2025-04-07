@@ -1,0 +1,56 @@
+{
+  "name": "appscho",
+  "version": "0.0.0",
+  "description": "An awmazing API wrapper for AppScho.",
+  "author": "LiterateInk <contact@literate.ink> (https://literate.ink)",
+  "license": "GPL-3.0-or-later",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@scure/base": "^1.2.4",
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@types/bun": "^1.2.8",
+    "@typescript-eslint/parser": "^8.29.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.24.0",
+    "eslint-plugin-perfectionist": "^4.11.0",
+    "jiti": "^2.4.2",
+    "terser": "^5.39.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "appscho",
+    "wrapper",
+    "api"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "bugs": {
+    "url": "https://github.com/LiterateInk/AppScho.JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiterateInk/AppScho.JS.git"
+  },
+  "homepage": "https://appscho.docs.literate.ink/",
+  "sideEffects": false
+}
