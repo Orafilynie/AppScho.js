@@ -13,6 +13,7 @@ export * from "./instance";
 export * from "./lesson";
 export * from "./location";
 export * from "./metadata";
+export * from "./oauth";
 export * from "./platform";
 export * from "./profile";
 export * from "./quickaccess";

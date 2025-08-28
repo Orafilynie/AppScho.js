@@ -7,5 +7,7 @@ config({ path: join(__dirname, ".env") });
 export const credentials = {
   instance: process.env.INSTANCE!,
   password: process.env.PASSWORD!,
-  username: process.env.USERNAME!
+  username: process.env.USERNAME!,
+  oauth: process.env.OAUTH!,
+  refresh: process.env.REFRESH!
 };

@@ -11,4 +11,8 @@ export interface User {
    * Should be used for authenticated requests.
    */
   token: string
+  /**
+   * Only available when using OAuth login
+   */
+  refreshToken?: string
 }
