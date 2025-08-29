@@ -8,7 +8,7 @@ export const INSTANCES: Array<Instance> = [
   { id: "essec", name: "ESSEC Business School" },
   { id: "regent", name: "Regent's University London", casurl: "https://gge-gbr.onelogin.com/oidc/2/auth", clientid: "d29993a0-6b00-013a-7b8e-02732a18081038446", scope: "openid+profile+email+params+groups", uriend: false },
   { id: "iicp", name: "Narratiiv Inside", casurl: "https://gge-fra.onelogin.com/oidc/2/auth", clientid: "2fe63b60-bff1-013b-ddc6-0668df09704237627", scope: "openid+profile+email+params+groups", uriend: false },
-  { id: "icp", name: "ICP", casurl: "https://login.windows.net/common/oauth2/authorize", clientid: "1320c5ec-0239-404b-aa44-5f3a43bbd2ac" },
+  { id: "icp", name: "ICP", casurl: "https://login.windows.net/common/oauth2/authorize", clientid: "1320c5ec-0239-404b-aa44-5f3a43bbd2ac", uriend: false },
   { id: "macromedia", name: "Galileo Global Education Germany", casurl: "https://gge-deu.onelogin.com/oidc/2/auth", clientid: "ba5a9ba0-88f8-013a-9a42-02ce5bf6a8b437628", scope: "openid+profile+email+params+groups", uriend: false },
   { id: "esarc", name: "ESARC go", casurl: "https://gge-fra.onelogin.com/oidc/2/auth", clientid: "04a71590-4e7e-013d-0d74-4224903aba3737627", scope: "openid+profile+email+params+groups", uriend: false },
   { id: "merkure", name: "Merkure Live", casurl: "https://gge-fra.onelogin.com/oidc/2/auth", clientid: "f2d6ed00-7e43-013d-0e35-020afc8f024837627", scope: "openid+profile+email+params+groups", uriend: false },
