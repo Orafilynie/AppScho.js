@@ -1,5 +1,5 @@
-import * as AppScho from "../src";
-import { credentials } from "./_credentials";
+import * as AppScho from "../../../src";
+import { credentials } from "../../_credentials";
 
 void async function main() {
   const token = await AppScho.refreshOAuthToken(credentials.instance, credentials.refresh);

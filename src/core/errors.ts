@@ -25,3 +25,10 @@ export class UnauthorizedError extends AppSchoError {
     this.name = "UnauthorizedError";
   }
 }
+
+export class CASNotSupportedError extends AppSchoError {
+  constructor(instance: string) {
+    super(`CAS authentication is not supported for instance "${instance}"`);
+    this.name = "CASNotSupportedError";
+  }
+}
