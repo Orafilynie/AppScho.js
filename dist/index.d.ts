@@ -232,6 +232,10 @@ interface User {
      * Only available when using OAuth login
      */
     refreshToken?: string;
+    /**
+     * Department extracted from JWT token
+     */
+    department?: null | string;
 }
 
 declare const getCareerEvents: (instance: string) => Promise<Response<CareerEvent>>;

@@ -15,4 +15,8 @@ export interface User {
    * Only available when using OAuth login
    */
   refreshToken?: string
+  /**
+   * Department extracted from JWT token
+   */
+  department?: null | string
 }
