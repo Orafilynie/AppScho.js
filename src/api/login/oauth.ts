@@ -54,11 +54,13 @@ export const getCASURL = (instance: string): string => {
     state: state
   });
 
+  let queryString = params.toString();
+
   if (instanceData.scope) {
-    params.append("scope", instanceData.scope);
+    queryString += `&scope=${instanceData.scope}`;
   }
 
-  return `${instanceData.casurl}?${params.toString()}`;
+  return `${instanceData.casurl}?${queryString}`;
 };
 
 
