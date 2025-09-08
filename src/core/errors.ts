@@ -5,6 +5,13 @@ export class AppSchoError extends Error {
   }
 }
 
+export class CASNotSupportedError extends AppSchoError {
+  constructor(instance: string) {
+    super(`CAS authentication is not supported for instance "${instance}"`);
+    this.name = "CASNotSupportedError";
+  }
+}
+
 export class InternalServerError extends AppSchoError {
   constructor() {
     super("Internal server error, please try again later");
@@ -23,12 +30,5 @@ export class UnauthorizedError extends AppSchoError {
   constructor() {
     super("Unauthorized, please check your credentials or token");
     this.name = "UnauthorizedError";
-  }
-}
-
-export class CASNotSupportedError extends AppSchoError {
-  constructor(instance: string) {
-    super(`CAS authentication is not supported for instance "${instance}"`);
-    this.name = "CASNotSupportedError";
   }
 }
