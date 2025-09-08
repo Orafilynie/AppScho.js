@@ -9,7 +9,7 @@ export * from "./feed/posts";
 export * from "./knowledgebase";
 export * from "./locations";
 export * from "./login/credentials";
-export * from "./login/oauth"
+export * from "./login/oauth";
 export * from "./metadata";
 export * from "./news";
 export * from "./planning";
