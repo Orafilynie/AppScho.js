@@ -260,9 +260,12 @@ declare const getLocations: (instance: string) => Promise<Array<Location>>;
 
 declare const loginWithCredentials: (instance: string, username: string, password: string) => Promise<User>;
 
-declare const getCASURL: (instance: string) => string;
 declare const loginWithOAuth: (instance: string, oauthToken: string) => Promise<User>;
+
+declare const getCASURL: (instance: string) => string;
+
 declare const refreshOAuthToken: (instance: string, refreshToken: string) => Promise<OAuthLogin>;
+declare const refreshOAuthTokenWithUser: (instance: string, refreshToken: string) => Promise<User>;
 
 declare const getMetadata: (instance: string, platform: Platform) => Promise<Metadata>;
 
@@ -299,4 +302,4 @@ declare class UnauthorizedError extends AppSchoError {
     constructor();
 }
 
-export { AppSchoError, CASNotSupportedError, type CareerEvent, type Category, type Crous, type CrousRestaurant, type EventsFeed, type ExternalService, type FacebookFeed, type FeedChannel, type FeedPost, INSTANCES, type Instance, InternalServerError, type Lesson, type Location, type Metadata, type NewsFeed, NoPlanningSubscriptionError, NotFoundError, type OAuthLogin, type OAuthUserData, type Platform, type Profile, type QuickAccess, type Response, type TwitterFeed, UnauthorizedError, type User, type YouTubeFeed, getCASURL, getCareerEvents, getCrous, getCrousRestaurants, getEventsFeed, getExternalServices, getFacebookFeed, getFeedChannels, getFeedPosts, getKnowledgebase, getLocations, getMetadata, getNewsFeed, getPlanning, getProfiles, getQuickAccesses, getTwitterFeed, getYouTubeFeed, loginWithCredentials, loginWithOAuth, refreshOAuthToken };
+export { AppSchoError, CASNotSupportedError, type CareerEvent, type Category, type Crous, type CrousRestaurant, type EventsFeed, type ExternalService, type FacebookFeed, type FeedChannel, type FeedPost, INSTANCES, type Instance, InternalServerError, type Lesson, type Location, type Metadata, type NewsFeed, NoPlanningSubscriptionError, NotFoundError, type OAuthLogin, type OAuthUserData, type Platform, type Profile, type QuickAccess, type Response, type TwitterFeed, UnauthorizedError, type User, type YouTubeFeed, getCASURL, getCareerEvents, getCrous, getCrousRestaurants, getEventsFeed, getExternalServices, getFacebookFeed, getFeedChannels, getFeedPosts, getKnowledgebase, getLocations, getMetadata, getNewsFeed, getPlanning, getProfiles, getQuickAccesses, getTwitterFeed, getYouTubeFeed, loginWithCredentials, loginWithOAuth, refreshOAuthToken, refreshOAuthTokenWithUser };
