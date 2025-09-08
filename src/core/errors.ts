@@ -19,6 +19,13 @@ export class InternalServerError extends AppSchoError {
   }
 }
 
+export class NoPlanningSubscriptionError extends AppSchoError {
+  constructor() {
+    super("Your account does not have a planning subscription, please check your intranet");
+    this.name = "NoPlanningSubscriptionError";
+  }
+}
+
 export class NotFoundError extends AppSchoError {
   constructor() {
     super("Not found, your instance probably doesn't have this feature");
