@@ -7,6 +7,7 @@ export default defineConfig({
   format: ["cjs", "esm"],
   minify: "terser",
   outDir: "dist",
+  publicDir: "src/logos",
   sourcemap: true,
   splitting: false,
   treeshake: true
