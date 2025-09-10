@@ -303,4 +303,47 @@ declare class UnauthorizedError extends AppSchoError {
     constructor();
 }
 
-export { AppSchoError, CASNotSupportedError, type CareerEvent, type Category, type Crous, type CrousRestaurant, type EventsFeed, type ExternalService, type FacebookFeed, type FeedChannel, type FeedPost, INSTANCES, type Instance, InternalServerError, type Lesson, type Location, type Metadata, type NewsFeed, NoPlanningSubscriptionError, NotFoundError, type OAuthLogin, type OAuthUserData, type Platform, type Profile, type QuickAccess, type Response, type TwitterFeed, UnauthorizedError, type User, type YouTubeFeed, getCASURL, getCareerEvents, getCrous, getCrousRestaurants, getEventsFeed, getExternalServices, getFacebookFeed, getFeedChannels, getFeedPosts, getKnowledgebase, getLocations, getMetadata, getNewsFeed, getPlanning, getProfiles, getQuickAccesses, getTwitterFeed, getYouTubeFeed, loginWithCredentials, loginWithOAuth, refreshOAuthToken, refreshOAuthTokenWithUser };
+declare const LOGOS: {
+    readonly bsb: any;
+    readonly edhec: any;
+    readonly emstra: any;
+    readonly esarc: any;
+    readonly esg: any;
+    readonly essec: any;
+    readonly digitalcampus: any;
+    readonly macromedia: any;
+    readonly hec: any;
+    readonly ipp: any;
+    readonly ieu: any;
+    readonly iseg: any;
+    readonly lisaa: any;
+    readonly merkure: any;
+    readonly mbs: any;
+    readonly eigsi: any;
+    readonly essca: any;
+    readonly ucly: any;
+    readonly alijia: any;
+    readonly epp: any;
+    readonly esigelec: any;
+    readonly estp: any;
+    readonly esaip: any;
+    readonly iicp: any;
+    readonly ueve: any;
+    readonly pstb: any;
+    readonly regent: any;
+    readonly sciencepo: any;
+    readonly scpoaix: any;
+    readonly ubmont: any;
+    readonly uclouvain: any;
+    readonly univeiffel: any;
+    readonly unilyon3: any;
+    readonly uniassas: any;
+    readonly univangers: any;
+    readonly unimons: any;
+    readonly unimes: any;
+    readonly upjv: any;
+    readonly univpoitiers: any;
+    readonly unitoulon: any;
+};
+
+export { AppSchoError, CASNotSupportedError, type CareerEvent, type Category, type Crous, type CrousRestaurant, type EventsFeed, type ExternalService, type FacebookFeed, type FeedChannel, type FeedPost, INSTANCES, type Instance, InternalServerError, LOGOS, type Lesson, type Location, type Metadata, type NewsFeed, NoPlanningSubscriptionError, NotFoundError, type OAuthLogin, type OAuthUserData, type Platform, type Profile, type QuickAccess, type Response, type TwitterFeed, UnauthorizedError, type User, type YouTubeFeed, getCASURL, getCareerEvents, getCrous, getCrousRestaurants, getEventsFeed, getExternalServices, getFacebookFeed, getFeedChannels, getFeedPosts, getKnowledgebase, getLocations, getMetadata, getNewsFeed, getPlanning, getProfiles, getQuickAccesses, getTwitterFeed, getYouTubeFeed, loginWithCredentials, loginWithOAuth, refreshOAuthToken, refreshOAuthTokenWithUser };
