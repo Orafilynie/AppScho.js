@@ -1,14 +1,10 @@
-import type { User, OAuthUserData } from "~/models";
+import type { OAuthUserData, User } from "~/models";
 
 import { INSTANCES } from "~/core/constants";
 import { CASNotSupportedError } from "~/core/errors";
-import { getDepartmentFromToken } from "~/utils/jwt";
 
 export const formatUserData = (userData: OAuthUserData, token: string, refreshToken?: string): User => {
-  const department = getDepartmentFromToken(token);
-
   return {
-    department: department,
     firstname: userData.firstname,
     id_token: userData.id_token,
     lastname: userData.lastname,

@@ -13,7 +13,7 @@ export const decodeJWT = (token: string): any => {
   }
 };
 
-export const getDepartmentFromToken = (token: string): null | string => {
+export const getProgramFromToken = (token: string): null | string => {
   try {
     const decoded = decodeJWT(token);
     return decoded.department || null;

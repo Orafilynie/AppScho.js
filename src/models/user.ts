@@ -8,15 +8,11 @@ export interface User {
   picture: string
   program: string
   /**
-   * Should be used for authenticated requests.
-   */
-  token: string
-  /**
    * Only available when using OAuth login
    */
   refreshToken?: string
   /**
-   * Department extracted from JWT token
+   * Should be used for authenticated requests.
    */
-  department?: null | string
+  token: string
 }

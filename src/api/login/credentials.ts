@@ -2,7 +2,7 @@ import type { Response, User } from "~/models";
 
 import { createAppSchoAPI } from "~/core/constants";
 import { handleResponse } from "~/core/handler";
-import { getDepartmentFromToken } from "~/utils/jwt";
+import { getProgramFromToken } from "~/utils/jwt";
 
 export const loginWithCredentials = async (instance: string, username: string, password: string): Promise<User> => {
   try {
@@ -21,9 +21,9 @@ export const loginWithCredentials = async (instance: string, username: string, p
     const json: Response<User> = await response.json();
     const user = handleResponse(json);
 
-    const department = getDepartmentFromToken(user.token);
+    const program = getProgramFromToken(user.token);
 
-    return { ...user, department };
+    return { ...user, program: program || user.program };
   }
   catch (error) {
     if (error instanceof TypeError && error.message.includes("fetch")) {
