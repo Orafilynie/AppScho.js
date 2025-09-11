@@ -8,6 +8,10 @@ export interface User {
   picture: string
   program: string
   /**
+   * Only available when using OAuth login
+   */
+  refreshToken?: string
+  /**
    * Should be used for authenticated requests.
    */
   token: string
