@@ -1,9 +1,11 @@
 import * as AppScho from "../src";
 import { credentials } from "./_credentials";
+
 /**
 * Choose "credentials" for logging in with credentials, else choose "oauth" for logging in with an oauth token.
 */
 const authType = "credentials";
+
 void async function main() {
   // Initializate the token string.
   let token: string = "";
