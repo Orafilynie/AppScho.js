@@ -1,4 +1,6 @@
-export const decodeJWT = (token: string): any => {
+import type { JWTPayload } from "~/models";
+
+export const decodeJWT = (token: string): JWTPayload => {
   try {
     const parts = token.split(".");
     if (parts.length !== 3) {
