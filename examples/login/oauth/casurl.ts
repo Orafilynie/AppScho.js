@@ -1,8 +1,8 @@
-import * as AppScho from "../../../src";
 import { credentials } from "../../_credentials";
+import * as AppScho from "../../../src";
 
 void async function main() {
-  const url = await AppScho.getCASURL(credentials.instance);
+  const url = AppScho.getCASURL(credentials.instance);
   console.log("Instance :", credentials.instance);
   console.log("CAS URL :", url);
 }();

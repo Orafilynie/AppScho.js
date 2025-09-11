@@ -1,8 +1,8 @@
 export interface Instance {
-  id: string
-  name: string
   casurl?: string
   clientid?: string
+  id: string
+  name: string
   scope?: string
   uriend?: boolean
 }
