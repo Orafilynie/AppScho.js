@@ -10,7 +10,7 @@ export * from "./feed/post";
 export * from "./feed/twitter";
 export * from "./feed/youtube";
 export * from "./instance";
-export * from "./jwt"
+export * from "./jwt";
 export * from "./lesson";
 export * from "./location";
 export * from "./metadata";

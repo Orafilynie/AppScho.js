@@ -1,11 +1,11 @@
 export interface JWTPayload {
-  nbf: number
+  department: string
   exp: number
   iss: string
-  sub: string
-  uid: number
   jti: string
+  nbf: number
   st: string
+  sub: string
   tgt: string
-  department: string
+  uid: number
 }
