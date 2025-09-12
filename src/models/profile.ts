@@ -1,4 +1,4 @@
 export interface Profile {
-  title: string
-  uuid: string
+  title: string;
+  uuid: string;
 }

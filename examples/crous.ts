@@ -6,7 +6,7 @@ import { credentials } from "./_credentials";
 */
 const authType = "credentials";
 
-void async function main() {
+void (async function main() {
   // Initializate the token string.
   let token: string = "";
 
@@ -26,4 +26,4 @@ void async function main() {
   // Let's retrieve restaurants from the first Crous.
   const restaurants = await AppScho.getCrousRestaurants(credentials.instance, token, crous[0].id);
   console.log(restaurants);
-}();
+}());

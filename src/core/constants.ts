@@ -1,6 +1,5 @@
 import type { Instance } from "~/models";
 
-
 // @see https://github.com/LiterateInk/AppScho.Documentation/blob/main/DISCOVERING_INSTANCES.md
 export const INSTANCES: Array<Instance> = [
   { id: "bsb", name: "Burgundy School of Business" },

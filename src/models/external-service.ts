@@ -1,9 +1,9 @@
 export interface ExternalService {
-  description: string
+  description: string;
   picture: {
-    url: string
-  }
-  title: string
-  type: string
-  url: string
+    url: string;
+  };
+  title: string;
+  type: string;
+  url: string;
 }
