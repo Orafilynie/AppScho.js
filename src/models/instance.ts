@@ -5,4 +5,5 @@ export interface Instance {
   name: string;
   scope?: string;
   uriend?: boolean;
+  exchangeParams?: Record<string, string>;
 }

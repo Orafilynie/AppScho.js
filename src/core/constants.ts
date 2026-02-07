@@ -129,7 +129,13 @@ export const INSTANCES: Array<Instance> = [
     clientid: "AppSchoProd",
     id: "upjv",
     name: "Université de Picardie Jules Verne",
-    uriend: true
+    scope: "openid+profile+email+offline_access",
+    uriend: true,
+    exchangeParams: {
+      redirect_uri: "https://upjv.callback.oauth.appscho.com/",
+      client_id: "AppSchoProd",
+      resource: "https://graph.microsoft.com"
+    }
   },
   { id: "univpoitiers", name: "Université de Poitiers" },
   { casurl: "https://cas.univ-tln.fr/cas/oidc/authorize", clientid: "appscho", id: "unitoulon", name: "Université de Toulon", uriend: false },

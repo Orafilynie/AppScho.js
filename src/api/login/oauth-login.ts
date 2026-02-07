@@ -1,6 +1,6 @@
 import type { OAuthLogin, OAuthUserData, Response, User } from "~/models";
 
-import { createAppSchoAPI } from "~/core/constants";
+import { INSTANCES, createAppSchoAPI } from "~/core/constants";
 import { handleResponse } from "~/core/handler";
 import { formatUserData, validateInstance } from "~/utils/oauth";
 
@@ -8,12 +8,25 @@ export const loginWithOAuth = async (instance: string, oauthToken: string): Prom
   try {
     validateInstance(instance);
 
+    const instanceConfig = INSTANCES.find(inst => inst.id === instance);
+
+    const bodyParams = new URLSearchParams({
+      code: oauthToken,
+      grant_type: "authorization_code",
+    });
+
+    if (instanceConfig?.exchangeParams) {
+      Object.entries(instanceConfig.exchangeParams).forEach(([key, value]) => {
+        bodyParams.append(key, value);
+      });
+    }
+
     const tokenResponse = await fetch(`${createAppSchoAPI(instance)}/oauth/token`, {
-      body: `code=${oauthToken}&grant_type=authorization_code`,
+      method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded"
       },
-      method: "POST"
+      body: bodyParams.toString()
     });
 
     if (!tokenResponse.ok) {
