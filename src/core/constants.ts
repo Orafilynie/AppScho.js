@@ -106,13 +106,6 @@ export const INSTANCES: Array<Instance> = [
   { id: "scpoaix", name: "Sciences Po Aix" },
   { id: "ubmont", name: "Université Bordeaux Montaigne" },
   { id: "uclouvain", name: "Université Catholique de Louvain" },
-  {
-    casurl: "https://cas.univ-eiffel.fr/oidc/authorize",
-    clientid: "726a397e14d8465e80a46202",
-    id: "unieiffel",
-    name: "Université Gustave Eiffel",
-    uriend: true
-  },
   { id: "unilyon3", name: "Université Jean Moulin Lyon3" },
   {
     casurl: "https://cas.u-paris2.fr/cas/oidc/authorize",
